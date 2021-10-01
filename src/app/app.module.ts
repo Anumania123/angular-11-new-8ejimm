@@ -5,6 +5,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AgGridModule } from 'ag-grid-angular';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './footer/footer.component';
 import { HelloComponent } from './hello.component';
 import { EmployeeComponent } from './employee/employee.component';
 
@@ -18,7 +19,12 @@ import { EmployeeService } from './services/employee.service';
     FormsModule,
     AgGridModule.withComponents([]),
   ],
-  declarations: [AppComponent, HelloComponent, EmployeeComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    EmployeeComponent,
+    FooterComponent,
+  ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
 })
